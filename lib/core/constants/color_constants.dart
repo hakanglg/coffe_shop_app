@@ -9,4 +9,6 @@ class ColorConstants {
   final yellow = Color(0xffcf9f69);
   final white = Color(0xfffcfcfc);
   final black = Color(0xff000000);
+  final lightGrey = Color(0xffEDEDED);
+  final grey = Color.fromARGB(78, 26, 25, 25);
 }

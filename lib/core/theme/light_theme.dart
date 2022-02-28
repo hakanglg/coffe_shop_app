@@ -1,3 +1,4 @@
+import 'package:coffe_shop_app/core/constants/bordor_constants.dart';
 import 'package:flutter/material.dart';
 
 import '../constants/color_constants.dart';
@@ -11,6 +12,8 @@ ThemeData lightTheme = ThemeData(
     textTheme: TextTheme(
         headline4: TextStyle(
             color: ColorConstants.instance.black, fontWeight: FontWeight.w500),
+        headline6: TextStyle(
+            color: ColorConstants.instance.black, fontWeight: FontWeight.w700),
         caption: TextStyle(color: ColorConstants.instance.black)),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
         backgroundColor: ColorConstants.instance.white,
@@ -18,4 +21,11 @@ ThemeData lightTheme = ThemeData(
         unselectedItemColor: Colors.grey,
         showUnselectedLabels: true,
         selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold),
-        unselectedLabelStyle: TextStyle(fontWeight: FontWeight.bold)));
+        unselectedLabelStyle: TextStyle(fontWeight: FontWeight.bold)),
+    inputDecorationTheme: InputDecorationTheme(
+        border: BorderConstants.instance.radiusAllHeight,
+        filled: true,
+        fillColor: ColorConstants.instance.lightGrey,
+        prefixIconColor: ColorConstants.instance.black,
+        suffixIconColor: ColorConstants.instance.white,
+        hintStyle: TextStyle(color: ColorConstants.instance.grey)));

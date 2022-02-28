@@ -2,7 +2,7 @@ part of 'home_view.dart';
 
 class _HomeStringValues {
   final String locationText = "Lagos,Nigeria";
-  final String morningText = "Good Morning,David";
+  final String morningText = "Good morning,David";
   final String searchLabel = "Search Coffee...";
   final String categoriesText = "Categories";
   final String specialOfferText = "Special Offer";

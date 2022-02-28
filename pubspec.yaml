@@ -76,24 +76,16 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: MuseoModerno
+    - family: Poppins
       fonts:
-        - asset: assets/fonts/MuseoModerno/MuseoModerno-Thin.ttf
-        - asset: assets/fonts/MuseoModerno/MuseoModerno-ExtraLight.ttf
-        - asset: assets/fonts/MuseoModerno/MuseoModerno-Light.ttf
-        - asset: assets/fonts/MuseoModerno/MuseoModerno-Regular.ttf
-        - asset: assets/fonts/MuseoModerno/MuseoModerno-Medium.ttf
-        - asset: assets/fonts/MuseoModerno/MuseoModerno-SemiBold.ttf
-        - asset: assets/fonts/MuseoModerno/MuseoModerno-Bold.ttf
-        - asset: assets/fonts/MuseoModerno/MuseoModerno-ExtraBold.ttf
-        - asset: assets/fonts/MuseoModerno/MuseoModerno-Black.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-    # - family: Sk-Modernist
-    #   fonts:
-    #     - asset: assets/fonts/Sk-Modernist/Sk-Modernist-Regular.otf
-    #     - asset: assets/fonts/Sk-Modernist/Sk-Modernist-Mono.otf
-    #     - asset: assets/fonts/Sk-Modernist/Sk-Modernist-Bold.otf
+        - asset: assets/fonts/Poppins/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins/Poppins-Bold.ttf
+        - asset: assets/fonts/Poppins/Poppins-ExtraBold.ttf
+        - asset: assets/fonts/Poppins/Poppins-Medium.ttf
+        - asset: assets/fonts/Poppins/Poppins-Thin.ttf
+        - asset: assets/fonts/Poppins/Poppins-ExtraBold.ttf
+
+
     # - family: Roboto
     #   fonts:
     #     - asset: assets/fonts/Roboto/Roboto-Regular.ttf

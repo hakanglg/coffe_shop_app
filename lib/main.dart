@@ -1,13 +1,18 @@
-import 'package:coffe_shop_app/core/theme/light_theme.dart';
-import 'package:coffe_shop_app/features/onboarding/onboarding_view.dart';
 import 'package:flutter/material.dart';
+
+import 'core/base/base_state.dart';
+import 'core/theme/light_theme.dart';
+import 'features/home/view/home_view.dart';
 
 void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatelessWidget with BaseState {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: lightTheme, title: 'Material App', home: OnboardingView());
+        debugShowCheckedModeBanner: false,
+        theme: lightTheme,
+        title: stringConstants.TITLE,
+        home: HomeView());
   }
 }

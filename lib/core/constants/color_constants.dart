@@ -8,4 +8,5 @@ class ColorConstants {
   final brown = Color(0xff382e1e);
   final yellow = Color(0xffcf9f69);
   final white = Color(0xfffcfcfc);
+  final black = Color(0xff000000);
 }

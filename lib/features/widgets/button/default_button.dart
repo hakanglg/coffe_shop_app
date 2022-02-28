@@ -1,6 +1,7 @@
-import '../../../core/base/base_state.dart';
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
+
+import '../../../core/base/base_state.dart';
 
 class DefaultButton extends StatelessWidget with BaseState {
   final String text;

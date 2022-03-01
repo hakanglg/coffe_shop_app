@@ -21,6 +21,7 @@ class CoffeeCard extends StatelessWidget with BaseState {
     return Padding(
       padding: EdgeInsets.only(right: context.lowValue),
       child: Container(
+        height: context.dynamicHeight(.4),
         width: context.dynamicWidth(.45),
         decoration: ShapeDecoration(
             color: colorConstants.white, shape: borderConstants.radiusAll),
@@ -29,8 +30,7 @@ class CoffeeCard extends StatelessWidget with BaseState {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Expanded(flex: 10, child: imageSection(context)),
-                context.emptySizedHeightBoxLow,
+                Expanded(flex: 9, child: imageSection(context)),
                 Expanded(flex: 5, child: bottomSection(context))
               ],
             ),

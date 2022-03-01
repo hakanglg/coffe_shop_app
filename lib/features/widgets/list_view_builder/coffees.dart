@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 import '../../../models/coffee_model.dart';
 import '../card/coffee_card.dart';
 
 class CoffeesListViewBuilder extends StatelessWidget {
-  const CoffeesListViewBuilder({
-    Key? key,
-  }) : super(key: key);
+  final Axis direction;
 
+  CoffeesListViewBuilder({Key? key, this.direction = Axis.horizontal})
+      : super(key: key);
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      scrollDirection: Axis.horizontal,
+      scrollDirection: direction,
       itemCount: coffees.length,
       itemBuilder: (context, index) => CoffeeCard(
           image: coffees[index].image,

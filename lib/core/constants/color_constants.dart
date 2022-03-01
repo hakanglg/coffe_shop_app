@@ -11,4 +11,5 @@ class ColorConstants {
   final black = Color(0xff000000);
   final lightGrey = Color(0xffEDEDED);
   final grey = Color.fromARGB(78, 26, 25, 25);
+  final bgColor = Color.fromARGB(223, 250, 250, 250);
 }

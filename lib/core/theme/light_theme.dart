@@ -1,4 +1,4 @@
-import 'package:coffe_shop_app/core/constants/bordor_constants.dart';
+import '../constants/bordor_constants.dart';
 import 'package:flutter/material.dart';
 
 import '../constants/color_constants.dart';
@@ -6,10 +6,11 @@ import '../constants/string_constants.dart';
 
 ThemeData lightTheme = ThemeData(
     fontFamily: StringConstants.instance.FONT,
-    scaffoldBackgroundColor: ColorConstants.instance.white,
+    scaffoldBackgroundColor: ColorConstants.instance.bgColor,
     appBarTheme: const AppBarTheme(color: Colors.transparent, elevation: 0),
     iconTheme: IconThemeData(color: ColorConstants.instance.green),
     textTheme: TextTheme(
+        bodyText1: TextStyle(fontWeight: FontWeight.w700),
         headline4: TextStyle(
             color: ColorConstants.instance.black, fontWeight: FontWeight.w500),
         headline6: TextStyle(

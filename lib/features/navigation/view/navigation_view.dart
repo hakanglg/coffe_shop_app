@@ -1,4 +1,4 @@
-import 'package:coffe_shop_app/features/home/view/home_view.dart';
+import '../../home/view/home_view.dart';
 
 import '../../../core/base/base_state.dart';
 import 'package:flutter/material.dart';

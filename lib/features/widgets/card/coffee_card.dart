@@ -29,7 +29,8 @@ class CoffeeCard extends StatelessWidget with BaseState {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Expanded(flex: 8, child: imageSection(context)),
+                Expanded(flex: 10, child: imageSection(context)),
+                context.emptySizedHeightBoxLow,
                 Expanded(flex: 5, child: bottomSection(context))
               ],
             ),

@@ -8,9 +8,11 @@ import '../../../models/coffee_model.dart';
 
 class CoffeeCard extends StatelessWidget with BaseState {
   final String image, title, description, price;
+  final VoidCallback? func;
 
   CoffeeCard(
       {Key? key,
+      this.func,
       required this.image,
       required this.title,
       required this.description,
@@ -20,19 +22,22 @@ class CoffeeCard extends StatelessWidget with BaseState {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(right: context.lowValue),
-      child: Container(
-        height: context.dynamicHeight(.4),
-        width: context.dynamicWidth(.45),
-        decoration: ShapeDecoration(
-            color: colorConstants.white, shape: borderConstants.radiusAll),
-        child: MyRow(
-          child: MyColumn(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Expanded(flex: 9, child: imageSection(context)),
-                Expanded(flex: 5, child: bottomSection(context))
-              ],
+      child: InkWell(
+        onTap: func,
+        child: Container(
+          height: context.dynamicHeight(.4),
+          width: context.dynamicWidth(.45),
+          decoration: ShapeDecoration(
+              color: colorConstants.white, shape: borderConstants.radiusAll),
+          child: MyRow(
+            child: MyColumn(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Expanded(flex: 9, child: imageSection(context)),
+                  Expanded(flex: 5, child: bottomSection(context))
+                ],
+              ),
             ),
           ),
         ),

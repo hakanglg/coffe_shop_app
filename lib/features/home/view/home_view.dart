@@ -25,31 +25,27 @@ class HomeView extends StatelessWidget with BaseState {
       appBar: buildAppBar(context),
       body: MyRow(
         child: MyColumn(
-          child: SingleChildScrollView(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Expanded(
-                    flex: 1, child: titleText(context, values.morningText)),
-                Expanded(
-                    flex: 1,
-                    child: CustomTextFieldSearch(text: values.searchLabel)),
-                Expanded(
-                    flex: 1,
-                    child: titleText(context,
-                        values.categoriesText)), // CATEGORIES TITLE SECTION
-                Expanded(flex: 1, child: CatogoriesListViewBuilder()),
-                Expanded(flex: 5, child: CoffeesListViewBuilder()),
-                Expanded(
-                    flex: 1,
-                    child: titleText(context, values.specialOfferText)),
-                Expanded(
-                    flex: 1,
-                    child: CoffeesListViewBuilder(
-                      direction: Axis.vertical,
-                    )),
-              ],
-            ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(flex: 1, child: titleText(context, values.morningText)),
+              Expanded(
+                  flex: 1,
+                  child: CustomTextFieldSearch(text: values.searchLabel)),
+              Expanded(
+                  flex: 1,
+                  child: titleText(context,
+                      values.categoriesText)), // CATEGORIES TITLE SECTION
+              Expanded(flex: 1, child: CatogoriesListViewBuilder()),
+              Expanded(flex: 5, child: CoffeesListViewBuilder()),
+              Expanded(
+                  flex: 1, child: titleText(context, values.specialOfferText)),
+              Expanded(
+                  flex: 1,
+                  child: CoffeesListViewBuilder(
+                    direction: Axis.vertical,
+                  )),
+            ],
           ),
         ),
       ),

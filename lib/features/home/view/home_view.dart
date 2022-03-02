@@ -25,27 +25,41 @@ class HomeView extends StatelessWidget with BaseState {
       appBar: buildAppBar(context),
       body: MyRow(
         child: MyColumn(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Expanded(flex: 1, child: titleText(context, values.morningText)),
-              Expanded(
-                  flex: 1,
-                  child: CustomTextFieldSearch(text: values.searchLabel)),
-              Expanded(
-                  flex: 1,
-                  child: titleText(context,
-                      values.categoriesText)), // CATEGORIES TITLE SECTION
-              Expanded(flex: 1, child: CatogoriesListViewBuilder()),
-              Expanded(flex: 5, child: CoffeesListViewBuilder()),
-              Expanded(
-                  flex: 1, child: titleText(context, values.specialOfferText)),
-              Expanded(
-                  flex: 1,
-                  child: CoffeesListViewBuilder(
-                    direction: Axis.vertical,
-                  )),
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(
+                    height: context.dynamicHeight(.04),
+                    child: titleText(context, values.morningText)),
+                context.emptySizedHeightBoxLow,
+                SizedBox(
+                    height: context.dynamicHeight(.1),
+                    child: CustomTextFieldSearch(text: values.searchLabel)),
+                context.emptySizedHeightBoxLow,
+                SizedBox(
+                  height: context.dynamicHeight(.04),
+                  child: titleText(context, values.categoriesText),
+                ), // CATEGORIES TITLE SECTION
+                context.emptySizedHeightBoxLow,
+                SizedBox(
+                    height: context.dynamicHeight(.07),
+                    child: CatogoriesListViewBuilder()),
+                context.emptySizedHeightBoxLow,
+                SizedBox(
+                    height: context.dynamicHeight(.4),
+                    child: CoffeesListViewBuilder()),
+                context.emptySizedHeightBoxLow,
+                SizedBox(
+                    height: context.dynamicHeight(.04),
+                    child: titleText(context, values.specialOfferText)),
+                context.emptySizedHeightBoxLow,
+                SizedBox(
+                  height: context.dynamicHeight(.38),
+                  child: CoffeesListViewBuilder(direction: Axis.vertical),
+                ),
+              ],
+            ),
           ),
         ),
       ),

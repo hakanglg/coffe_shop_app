@@ -1,14 +1,15 @@
 import '../../home/view/home_view.dart';
-
 import '../../../core/base/base_state.dart';
 import 'package:flutter/material.dart';
+// ignore: unused_import
 import 'package:kartal/kartal.dart';
-
-import '../../../core/constants/color_constants.dart';
 
 part 'navigation_string_values.dart';
 
+// ignore: must_be_immutable
 class NavigationView extends StatefulWidget with BaseState {
+  NavigationView({Key? key}) : super(key: key);
+
   @override
   State<NavigationView> createState() => _NavigationViewState();
 }

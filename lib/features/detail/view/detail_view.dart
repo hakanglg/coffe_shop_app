@@ -1,10 +1,7 @@
-import 'package:coffe_shop_app/core/base/base_state.dart';
-import 'package:coffe_shop_app/core/components/column/column.dart';
-import 'package:coffe_shop_app/core/components/row/row.dart';
-import 'package:coffe_shop_app/core/constants/bordor_constants.dart';
-import 'package:coffe_shop_app/core/constants/color_constants.dart';
-import 'package:coffe_shop_app/features/widgets/button/size_select_button.dart';
-import 'package:coffe_shop_app/models/coffee_model.dart';
+import '../../../core/base/base_state.dart';
+import '../../../core/components/column/column.dart';
+import '../../widgets/button/size_select_button.dart';
+import '../../../models/coffee_model.dart';
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
 import '../../../core/components/button/stadium_button.dart';
@@ -12,6 +9,7 @@ import '../../widgets/button/add_to_cart_button.dart';
 
 part "detail_string_values.dart";
 
+// ignore: must_be_immutable
 class DetailView extends StatelessWidget with BaseState {
   final Coffee coffee;
   _DetailStringValues values = _DetailStringValues();
@@ -47,7 +45,7 @@ class DetailView extends StatelessWidget with BaseState {
         context.pop();
       },
       color: colorConstants.white,
-      icon: Icon(Icons.chevron_left_outlined),
+      icon: const Icon(Icons.chevron_left_outlined),
     );
   }
 

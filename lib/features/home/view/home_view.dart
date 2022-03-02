@@ -1,10 +1,7 @@
-import 'package:coffe_shop_app/core/components/column/column.dart';
-import 'package:coffe_shop_app/core/components/row/row.dart';
-import 'package:coffe_shop_app/core/constants/bordor_constants.dart';
-import 'package:coffe_shop_app/features/widgets/card/coffee_card.dart';
+import '../../../core/components/column/column.dart';
+import '../../../core/components/row/row.dart';
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
-
 import '../../../core/base/base_state.dart';
 import '../../../core/constants/color_constants.dart';
 import '../../../models/coffee_model.dart';
@@ -14,9 +11,12 @@ import '../../widgets/textfield/search_bar.dart';
 
 part 'home_string_values.dart';
 
+// ignore: must_be_immutable
 class HomeView extends StatelessWidget with BaseState {
   _HomeStringValues values = _HomeStringValues();
   Coffee? model;
+
+  HomeView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -48,7 +48,7 @@ class HomeView extends StatelessWidget with BaseState {
                 context.emptySizedHeightBoxLow,
                 SizedBox(
                     height: context.dynamicHeight(.4),
-                    child: CoffeesListViewBuilder()),
+                    child: const CoffeesListViewBuilder()),
                 context.emptySizedHeightBoxLow,
                 SizedBox(
                     height: context.dynamicHeight(.04),
@@ -56,7 +56,7 @@ class HomeView extends StatelessWidget with BaseState {
                 context.emptySizedHeightBoxLow,
                 SizedBox(
                   height: context.dynamicHeight(.38),
-                  child: CoffeesListViewBuilder(direction: Axis.vertical),
+                  child: const CoffeesListViewBuilder(direction: Axis.vertical),
                 ),
               ],
             ),
@@ -78,8 +78,8 @@ class HomeView extends StatelessWidget with BaseState {
   Padding appBarLeadingSection(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(left: context.lowValue),
-      child:
-          CircleAvatar(backgroundImage: AssetImage("assets/images/ic_1.png")),
+      child: const CircleAvatar(
+          backgroundImage: AssetImage("assets/images/ic_1.png")),
     );
   }
 

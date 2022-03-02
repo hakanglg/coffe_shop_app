@@ -1,7 +1,8 @@
-import 'package:coffe_shop_app/core/base/base_state.dart';
+import '../../../core/base/base_state.dart';
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
 
+// ignore: must_be_immutable
 class CustomTextFieldSearch extends StatelessWidget with BaseState {
   final String text;
 
@@ -10,7 +11,7 @@ class CustomTextFieldSearch extends StatelessWidget with BaseState {
   Widget build(BuildContext context) {
     return TextField(
       decoration: InputDecoration(
-          prefixIcon: Icon(Icons.search),
+          prefixIcon: const Icon(Icons.search),
           suffixIcon: Padding(
             padding: EdgeInsets.only(right: context.lowValue),
             child: CircleAvatar(

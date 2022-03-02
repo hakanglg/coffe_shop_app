@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-
 import '../../../models/coffee_model.dart';
 import '../../detail/view/detail_view.dart';
 import '../card/coffee_card.dart';
@@ -8,7 +6,7 @@ import '../card/coffee_card.dart';
 class CoffeesListViewBuilder extends StatelessWidget {
   final Axis direction;
   final Coffee? coffee;
-  CoffeesListViewBuilder(
+  const CoffeesListViewBuilder(
       {Key? key, this.coffee, this.direction = Axis.horizontal})
       : super(key: key);
   @override

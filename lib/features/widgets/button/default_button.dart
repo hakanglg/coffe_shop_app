@@ -3,6 +3,7 @@ import 'package:kartal/kartal.dart';
 
 import '../../../core/base/base_state.dart';
 
+// ignore: must_be_immutable
 class DefaultButton extends StatelessWidget with BaseState {
   final String text;
   final VoidCallback function;

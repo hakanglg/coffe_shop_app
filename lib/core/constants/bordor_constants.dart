@@ -7,10 +7,10 @@ class BorderConstants {
 
   final radiusAll =
       RoundedRectangleBorder(borderRadius: BorderRadius.circular(30));
-  final radiusTop = RoundedRectangleBorder(
+  final radiusTop = const RoundedRectangleBorder(
       borderRadius: BorderRadiusDirectional.only(
           topStart: Radius.circular(30), topEnd: Radius.circular(30)));
-  final radiusBottomLeft = RoundedRectangleBorder(
+  final radiusBottomLeft = const RoundedRectangleBorder(
       borderRadius:
           BorderRadiusDirectional.only(bottomStart: Radius.circular(30)));
   final radiusHeight =

@@ -1,11 +1,10 @@
-import 'package:coffe_shop_app/core/base/base_state.dart';
-import 'package:coffe_shop_app/core/components/column/column.dart';
-import 'package:coffe_shop_app/core/components/row/row.dart';
+import '../../../core/base/base_state.dart';
+import '../../../core/components/column/column.dart';
+import '../../../core/components/row/row.dart';
 import 'package:flutter/material.dart';
 import 'package:kartal/kartal.dart';
 
-import '../../../models/coffee_model.dart';
-
+// ignore: must_be_immutable
 class CoffeeCard extends StatelessWidget with BaseState {
   final String image, title, description, price;
   final VoidCallback? func;

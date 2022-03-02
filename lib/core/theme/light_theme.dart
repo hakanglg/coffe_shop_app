@@ -10,7 +10,7 @@ ThemeData lightTheme = ThemeData(
     appBarTheme: const AppBarTheme(color: Colors.transparent, elevation: 0),
     iconTheme: IconThemeData(color: ColorConstants.instance.green),
     textTheme: TextTheme(
-        bodyText1: TextStyle(fontWeight: FontWeight.w700),
+        bodyText1: const TextStyle(fontWeight: FontWeight.w700),
         headline4: TextStyle(
             color: ColorConstants.instance.black, fontWeight: FontWeight.w500),
         headline6: TextStyle(
@@ -21,8 +21,8 @@ ThemeData lightTheme = ThemeData(
         selectedItemColor: ColorConstants.instance.green,
         unselectedItemColor: Colors.grey,
         showUnselectedLabels: true,
-        selectedLabelStyle: TextStyle(fontWeight: FontWeight.bold),
-        unselectedLabelStyle: TextStyle(fontWeight: FontWeight.bold)),
+        selectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold),
+        unselectedLabelStyle: const TextStyle(fontWeight: FontWeight.bold)),
     inputDecorationTheme: InputDecorationTheme(
         border: BorderConstants.instance.radiusAllHeight,
         filled: true,
